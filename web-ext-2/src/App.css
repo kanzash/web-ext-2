@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.Time {
+  font-size: 88px;
+  font-weight: 300;
+}
+
+.Date {
+  font-size: 48px;
+  font-weight: 200;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

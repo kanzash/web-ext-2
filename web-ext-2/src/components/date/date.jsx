@@ -1,15 +1,17 @@
 import React from "react";
+import { format } from "date-fns";
 
-export const DateDisplay = () => {
+export const DateDisplay = (props) => {
   const currDate = new Date();
-  var date =
-    currDate.getDate() +
-    "/" +
-    currDate.getMonth() +
-    "/" +
-    currDate.getFullYear();
+  let date;
 
-  return <div className="Date">{date}</div>;
+  if (props.DateFormat === "verbose") {
+    date = format(currDate, "PPPP");
+  } else {
+    date = format(currDate, "MM/dd/yyyy");
+  }
+
+  return <div className="Date">{date}</div>; // Look at html outline for best parent tag
 };
 
 export default DateDisplay;

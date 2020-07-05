@@ -1,9 +1,9 @@
 import React from "react";
 
 export const Greeting = (props) => {
-  const birthday = new Date();
+  const currTime = new Date();
 
-  const time = birthday.getHours();
+  const time = currTime.getHours();
   let greeting;
 
   const morning = time >= 4 || time <= 10;

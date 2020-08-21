@@ -6,10 +6,10 @@ export const Greeting = (props) => {
   const time = currTime.getHours();
   let greeting;
 
-  const morning = time >= 4 || time <= 10;
-  const afternoon = time >= 11 || time <= 16;
-  const evening = time >= 17 || time <= 23;
-  const night = time >= 1 || time <= 3;
+  const morning = time >= 4 && time <= 10;
+  const afternoon = time >= 11 && time <= 16;
+  const evening = time >= 17 && time <= 23;
+  const night = time >= 1 && time <= 3;
 
   const morningGreeting = "Good morning";
   const afternoonGreeting = "Good afternoon";
